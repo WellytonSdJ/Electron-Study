@@ -1,0 +1,26 @@
+* {
+  --background-primary: #3C1642;
+  --background-secondary: #663399;
+  --primary-button: #AFFC41;
+  --secondary-button: #ff640a;
+  --letter: #fafafa
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* 
+collor pallete
+
+
+#30321C
+*/
+
+.general-container {
+  /* background-color: var(--background-primary); */
+  background-color: red;
+  color: var(--letter);
+  
+  width: 100vw;
+  height: 100vh;
+}
