@@ -1,34 +1,50 @@
-const { app, BrowserWindow } = require('electron')
-const { exec } = require('child_process');
+document.addEventListener("DOMContentLoaded", function () {
+  const buttonsContainer = document.getElementById("buttons-container");
 
-const comand1 = 'comand1.bat'
+  // Função para carregar a lista de arquivos da pasta "comands"
+  async function loadFileNames() {
+      try {
+          const response = await fetch("/api/list-files"); // Substitua pelo endpoint real
+          if (!response.ok) {
+              throw new Error("Erro ao buscar a lista de arquivos.");
+          }
 
-const createWindow = () => {
-  const win = new BrowserWindow({
-    width: 800,
-    height: 600,
-    webPreferences: {
-      nodeIntegration: true,
-      contextIsolation: false,
-    },
-  })
+          const fileNames = await response.json();
+          createButtons(fileNames);
+      } catch (error) {
+          console.error("Erro ao buscar a lista de arquivos:", error);
+      }
+  }
 
-  win.loadFile('index.html')
-}
+  // Função para criar os botões com base na lista de arquivos
+  function createButtons(fileNames) {
+      fileNames.forEach(function (fileName) {
+          const buttonDiv = document.createElement("div");
+          buttonDiv.className = "btn";
 
-app.whenReady().then(() => {
-  createWindow()
-})
+          const buttonLink = document.createElement("a");
+          buttonLink.href = "#";
+          buttonLink.textContent = `Read more ${fileName}`;
 
-function handleClick(){
-  console.log('deu certo')
+          // Adicionar evento de clique para executar o arquivo
+          buttonLink.addEventListener("click", function () {
+              // Usar uma função para executar o arquivo
+              executeCommand(fileName);
+          });
 
-  exec(comand1, (error, stdout, stderr) => {
-    if (error) {
-      console.error(`Erro ao executar o arquivo batch: ${error}`);
-      return;
-    }
-    console.log(`Saída padrão do arquivo batch: ${stdout}`);
-    console.error(`Saída de erro do arquivo batch: ${stderr}`);
-  });
-}
+          buttonDiv.appendChild(buttonLink);
+          buttonsContainer.appendChild(buttonDiv);
+      });
+  }
+
+  // Função para executar o arquivo
+  function executeCommand(fileName) {
+      // Você pode adicionar aqui a lógica para executar o arquivo .bat
+      // Por exemplo, usando node.js child_process para executar o arquivo
+      // Certifique-se de ter a segurança necessária, pois executar arquivos .bat pode ser arriscado.
+      console.log(`Executando arquivo: ${fileName}`);
+  }
+
+  // Carregar a lista de arquivos quando a página for carregada
+  loadFileNames();
+});

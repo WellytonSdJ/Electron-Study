@@ -13,7 +13,8 @@ Partindo desse principio comecei o projeto em Electron que cria uma interface de
 
  - [X] executar arquivos .bat
  - [ ] executar arquivos .sh
+ - [ ] centralizar todos arquivos em apenas uma pasta
+ - [x] estilizar o sistema
  
  #### Feature #1
- - [ ] centralizar todos arquivos em apenas uma pasta
  - [ ] Ao executar a aplicação, lerá os arquivos da pasta e criará um botão para cada executor.
