@@ -15,6 +15,7 @@ Partindo desse principio comecei o projeto em Electron que cria uma interface de
  - [ ] executar arquivos .sh
  - [ ] centralizar todos arquivos em apenas uma pasta
  - [x] estilizar o sistema
+ - [ ] criar build do projeto.
  
  #### Feature #1
  - [ ] Ao executar a aplicação, lerá os arquivos da pasta e criará um botão para cada executor.
