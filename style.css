@@ -14,6 +14,10 @@
     sans-serif;
 }
 
+.btn {
+  cursor: pointer
+}
+
 .container {
   background: linear-gradient(
     to bottom,
