@@ -1,1 +1,1 @@
-msg * ajaçsldkjfçasdkjfçalksdf
+msg * outro comando

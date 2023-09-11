@@ -25,7 +25,7 @@ app.whenReady().then(() => {
 
 
 // função que executa o arquivo
-function handleClick(comandName) {
+function handleComand(comandName) {
   exec(comandName, (error, stdout, stderr) => {
     if (error) {
       console.error(`Erro ao executar o arquivo batch: ${error}`);
