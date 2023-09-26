@@ -35,19 +35,18 @@ Para executar o projeto, deve-se ter instalado localmente:
 5. Crie a build do projeto executando o comando `npm run build` no terminal. Isso fará com que seja criado o arquivo para distribuição. 
 ---
 
-
-----
 ## TODO
 
  - [X] executar arquivos .bat
  - [x] executar arquivos .sh
  - [x] estilizar o sistema
  - [ ] criar build do projeto.
- - [ ] centralizar todos arquivos em apenas uma pasta - melhoria
  
  #### Ideias de melhorias
- - Ao executar a aplicação, lerá os arquivos da pasta e criará um botão para cada executor.
 
+ - Inserção de novos comandos:
+  1. Ao executar a aplicação, lerá os arquivos da pasta e criará um botão para cada executor.
+  2. Botão adicionar comando para adicionar novos
+  3. Arrastar comandos para o programa e automaticamente será criado um botão relacionado ao item com o nome do arquivo.
 
-### Funcionamento:
-
+ - Um botão que habilita/desabilita a exclusão dos comandos registrados, que para ser habilitado é necessário inserir a senha de adm
