@@ -1,7 +1,7 @@
 {
-  "name": "demo-electron",
+  "name": "electra-comand-manager",
   "version": "1.0.0",
-  "description": "",
+  "description": "Gerenciador de executaveis .sh e .bat",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

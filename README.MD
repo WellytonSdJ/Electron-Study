@@ -17,9 +17,9 @@ Partindo desse principio comecei o projeto em Electron que cria uma interface de
 Para executar o projeto, deve-se ter instalado localmente:
 
 |--- |---
-| VSC | [Visual Studio Code](https://code.visualstudio.com)
-| NODE | [NodeJS](https://nodejs.org/en)
-| GIT | [GIT](https://git-scm.com)
+| VSC | [Visual Studio Code](https://code.visualstudio.com) |
+| NODE | [NodeJS](https://nodejs.org/en) |
+| GIT | [GIT](https://git-scm.com) |
 
 ### Preparando ambiente
 
