@@ -15,7 +15,7 @@ Partindo desse principio comecei o projeto em Electron que cria uma interface de
 ### Requisitos:
 
 Para executar o projeto, deve-se ter instalado localmente:
-
+| Plataforma | Link |
 | ---- | ---------------------------------------------------- |
 | VSC  | [Visual Studio Code](https://code.visualstudio.com) |
 | NODE | [NodeJS](https://nodejs.org/en) |
